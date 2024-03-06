@@ -11,3 +11,4 @@ tData = transform(z);
 output = reshape(palette(tData(:)), [width height 3]);
 
 imwrite(rot90(output), "test.png");
+imshow(rot90(output))

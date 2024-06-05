@@ -12,3 +12,8 @@ output = reshape(palette(tData(:)), [width height 3]);
 
 imwrite(rot90(output), "test.png");
 imshow(rot90(output))
+
+
+Z = repmat(z,[1,1,10]);
+TData = transform(Z);
+palette(TData(:));
